@@ -16,6 +16,8 @@ main {
     
     min-width: 640px;
     max-width: 1440px;
+
+    width: auto;
 }
 
 /* TITLE-MODULE */
@@ -142,7 +144,7 @@ img {
         background-color: black;
     
         padding-left: 4%;
-        padding-right: 8%;
+        padding-right: 4%;
     }
 
     .title-module h1 {
@@ -153,26 +155,26 @@ img {
     .subtitle-module {
         padding-top: 24px;
         padding-left: 4%;
-        padding-right: 8%;
+        padding-right: 4%;
     }
     
     .img-module {
         margin-top: 56px;
         padding-left: 4%;
-        padding-right: 8%;
+        padding-right: 4%;
     }
 
     .article-module {
         margin-top: 40px;
         padding-left: 4%;
-        padding-right: 8%;
+        padding-right: 4%;
         font-size: 1.25rem;
     }
 
     .bio-module {
         margin-top: 56px;
         margin-left: 4%;
-        margin-right: 8%;
+        padding-right: 4%;
         border-top: 4px solid #999999;
     
         max-width: 760px;
