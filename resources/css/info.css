@@ -7,6 +7,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    background-color: #f7f6ef;
 }
 
 html {
@@ -19,6 +20,7 @@ html {
 h1 {
     font-weight: 400;
     font-size: 4rem;
+    line-height: 140%;
 
 }
 
@@ -54,7 +56,7 @@ p {
     width: 100%;
     top: 0;
     position: fixed;
-    background-color: white;
+    background-color: #f7f6ef;
     z-index: 2;
 }
 
@@ -67,8 +69,9 @@ p {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.3px;
     grid-column: 1 / span 3;
     padding-left: 4rem;
     align-self: center;
@@ -84,6 +87,10 @@ p {
 
 .contact a {
     color: black;
+}
+
+.linkedin-link {
+    align-self: center;
 }
 
 .linkedin {
@@ -114,7 +121,7 @@ p {
     grid-column: 1 / span 8;
     align-self: center;
     padding-bottom: 3rem;
-    padding-top: 3rem;
+    padding-top: 4rem;
 }
 
 .grid-main h2 {
@@ -133,7 +140,7 @@ p {
 }
 
 .grid-main .my-work h3 {
-    padding-top: 4rem;
+    padding-top: 3.5rem;
     grid-column: 1 / span 10;
     grid-row: 5;
 }
@@ -180,7 +187,7 @@ p {
 
   .place {
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 500;
     grid-column: 1;
     margin-left: 4rem;
     margin-bottom: 3rem;
@@ -189,7 +196,7 @@ p {
 
   .year {
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 500;
     grid-column: 2;
     margin-right: 4rem;
     margin-bottom: 3rem;
@@ -244,7 +251,7 @@ p {
     width: 100%;
     top: 0;
     position: fixed;
-    background-color: white;
+    background-color: #f7f6ef;
     z-index: 2;
 }
 
@@ -258,7 +265,8 @@ p {
 
 .logo {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 600;
+    letter-spacing: -0.3px;
     grid-column: 1 / span 2;
     padding-left: 1rem;
     align-self: center;
@@ -359,13 +367,15 @@ p {
   .place {
     grid-column: 1;
     margin-left: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
     align-self:flex-end;
   }
 
   .year {
+    grid-column: 1;
     padding-left: 1rem;
-    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+
   }
 
 

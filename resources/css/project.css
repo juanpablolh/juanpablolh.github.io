@@ -7,6 +7,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    background-color: #F7F6EF;
 }
 
 html {
@@ -54,7 +55,7 @@ p {
     width: 100%;
     top: 0;
     position: fixed;
-    background-color: white;
+    background-color: #F7F6EF;
     z-index: 2;
 }
 
@@ -67,8 +68,9 @@ p {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.3px;
     grid-column: 1 / span 3;
     padding-left: 4rem;
     align-self: center;
@@ -84,6 +86,10 @@ p {
 
 .contact a {
     color: black;
+}
+
+.linkedin-link {
+    align-self: center;
 }
 
 .linkedin {
@@ -247,7 +253,7 @@ p {
     width: 100%;
     top: 0;
     position: fixed;
-    background-color: white;
+    background-color: #F7F6EF;
     z-index: 2;
 }
 
@@ -261,7 +267,8 @@ p {
 
 .logo {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 600;
+    letter-spacing: -0.3px;
     grid-column: 1 / span 2;
     padding-left: 1rem;
     align-self: center;
@@ -279,12 +286,15 @@ p {
     color: black;
 }
 
+.linkedin-link {
+    align-self: center;
+}
+
 .linkedin {
     font-size: 1.25rem;
     font-weight: 500;
     grid-column: 4;
     padding-right: 1rem;
-    align-self: center;
 }
 
 .grid-header .info {
@@ -430,13 +440,15 @@ h1 {
   .place {
     grid-column: 1;
     margin-left: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
     align-self:flex-end;
   }
 
   .year {
+    grid-column: 1;
     padding-left: 1rem;
-    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+
   }
 
 
