@@ -152,7 +152,6 @@ h1 {
   opacity:0;
   color: white;
   font-size: 1.25rem;
-  /* padding: 1.25rem; */
   text-align: center;
   margin-bottom: 0.5rem; 
 }
@@ -294,6 +293,10 @@ h1 {
   }
 
   /* PROJECTS */
+
+.overlay {
+  display: none;
+}
 
 .grid-projects {
     column-count: 1;

@@ -156,6 +156,11 @@ h1 {
     grid-column: 5 / span 4;
 }
 
+.solution-two {
+    grid-column: 9 / span 4;
+    padding-top: 1.5rem;
+}
+
 
 .subheading {
     font-size: 1.25rem;
@@ -168,6 +173,7 @@ h1 {
     line-height: 140%;
     padding-top: 1rem;
 }
+
 
   .image {
     display: block;
@@ -378,6 +384,14 @@ h1 {
 
 .solution {
     grid-column: 1 / span 4;
+}
+
+.solution-two {
+    font-size: 1rem;
+    font-weight: 400;
+    grid-column: 1 / span 4;
+    padding-top: 0rem;
+    margin-top: -1.25rem;
 }
 
 .subheading {
