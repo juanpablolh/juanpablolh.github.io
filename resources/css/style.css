@@ -294,12 +294,13 @@ h1 {
 
   /* PROJECTS */
 
-.overlay {
+.text {
   display: none;
 }
 
+
 .img-box:hover .overlay {
-  display: none;
+  opacity: 0;
 }
 
 .grid-projects {
