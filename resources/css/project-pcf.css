@@ -15,6 +15,11 @@ html {
     font-family: 'Inter', sans-serif;
 }
 
+a:link {
+    color: black;
+    text-decoration: underline;
+}
+
 /* Paragraph */
 
 h1 {
