@@ -19,7 +19,7 @@ a:visited {
   color: black;
 }
 
-a:active {
+a:link {
   color: black;
   text-decoration: underline;
 }
@@ -239,6 +239,11 @@ h1 {
 
 .grid-header a:visited {
   color: black;
+}
+
+.grid-header a:link {
+  color: black;
+  text-decoration: underline;
 }
 
 .logo {

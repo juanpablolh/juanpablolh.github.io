@@ -15,10 +15,14 @@ html {
     font-family: 'Inter', sans-serif;
 }
 
-a:link {
+a:visited {
+    color: black;
+  }
+  
+  a:link {
     color: black;
     text-decoration: underline;
-}
+  }
 
 /* Paragraph */
 

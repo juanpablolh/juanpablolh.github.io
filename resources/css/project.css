@@ -15,11 +15,14 @@ html {
     font-family: 'Inter', sans-serif;
 }
 
-a:link {
+a:visited {
+    color: black;
+  }
+  
+  a:link {
     color: black;
     text-decoration: underline;
-}
-
+  }
 
 /* Paragraph */
 
@@ -73,6 +76,11 @@ p {
     color: black;
 }
 
+.grid-header a:link {
+    color: black;
+    text-decoration: underline;
+}
+
 .logo {
     font-size: 1rem;
     font-weight: 600;
@@ -92,10 +100,6 @@ p {
 
 .contact a {
     color: black;
-}
-
-.linkedin-link {
-    align-self: center;
 }
 
 .linkedin {
