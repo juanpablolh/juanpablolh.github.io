@@ -175,13 +175,23 @@ h1 {
 }
 
 
-  .image {
+.image {
     display: block;
     width: 100%;
     height: auto;
     padding: 0.25rem;
-  }
+}
 
+.image-replaced {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0.25rem;
+}
+
+.image-replace {
+    display: none;
+}
 
 .column {
     display: flex;
@@ -412,6 +422,17 @@ h1 {
     height: auto;
     padding: 0.25rem;
   }
+
+.image-replaced {
+    display: none;
+}
+
+.image-replace {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0.25rem;
+}
 
 .column {
     display: block;
