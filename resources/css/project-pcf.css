@@ -182,7 +182,7 @@ h1 {
     padding: 0.25rem;
 }
 
-.image-replaced {
+#img-replaced {
     display: block;
     width: 100%;
     height: auto;
@@ -423,7 +423,7 @@ h1 {
     padding: 0.25rem;
   }
 
-.image-replaced {
+#img-replaced {
     display: none;
 }
 
