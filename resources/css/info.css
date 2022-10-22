@@ -91,6 +91,10 @@ p {
     align-self: center;
 }
 
+.logo a:link {
+    text-decoration: none;
+}
+
 .info {
     font-size: 1.1rem;
     font-weight: 700;
@@ -102,6 +106,10 @@ p {
 .contact a {
     color: black;
 }
+
+.linkedin-link {
+    align-self: center;
+  }
 
 .linkedin {
     font-size: 1.25rem;
