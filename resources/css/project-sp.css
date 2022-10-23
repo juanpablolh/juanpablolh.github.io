@@ -153,6 +153,11 @@ h1 {
     grid-column: 1 / span 3;
 }
 
+.grid-main #website {
+    grid-column: 4 / span 3;
+}
+
+
 /* Grid Project */
 
 .videoWrapper {
@@ -400,6 +405,7 @@ h1 {
     align-self: center;
     padding-top: 2rem;
 }
+
 
 /* Grid Project */
 
