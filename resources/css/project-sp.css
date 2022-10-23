@@ -406,6 +406,12 @@ h1 {
     padding-top: 2rem;
 }
 
+.grid-main #website {
+    grid-column: 1 / span 4;
+    grid-row: 5;
+    padding-top: 1rem;
+}
+
 
 /* Grid Project */
 
