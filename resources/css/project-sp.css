@@ -19,7 +19,7 @@ a:visited {
     color: black;
   }
   
-a:link {
+  a:link {
     color: black;
     text-decoration: underline;
   }
@@ -76,6 +76,11 @@ p {
     color: black;
 }
 
+.grid-header a:link {
+    color: black;
+    text-decoration: underline;
+}
+
 .logo {
     font-size: 1rem;
     font-weight: 600;
@@ -101,15 +106,15 @@ p {
     color: black;
 }
 
-.linkedin-link {
-    align-self: center;
-}
-
 .linkedin {
     font-size: 1.25rem;
     font-weight: 500;
     grid-column: 12;
     padding-right: 4rem;
+    align-self: center;
+}
+
+.linkedin-link {
     align-self: center;
 }
 
@@ -150,6 +155,21 @@ h1 {
 
 /* Grid Project */
 
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .videoWrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
 .grid-project {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -169,11 +189,6 @@ h1 {
     grid-column: 5 / span 4;
 }
 
-.solution-two {
-    grid-column: 9 / span 4;
-    padding-top: 1.5rem;
-}
-
 
 .subheading {
     font-size: 1.25rem;
@@ -187,29 +202,23 @@ h1 {
     padding-top: 1rem;
 }
 
-
 .image {
     display: block;
     width: 100%;
     height: auto;
     padding: 0.25rem;
-}
+  }
 
-#img-replaced {
-    display: block;
-    width: 100%;
-    height: auto;
-    padding: 0.25rem;
-}
-
-.image-replace {
+#choco-pack-mob {
     display: none;
 }
+
 
 .column {
     display: flex;
 }  
-  .image-half {
+
+.image-half {
     display: block;
     width: 50%;
     height: auto;
@@ -245,6 +254,9 @@ h1 {
         display: none;
       }
   
+
+
+      
 @media only screen and (max-width: 1080px) {
 
 /* Paragraph */
@@ -336,6 +348,7 @@ p {
     text-decoration: underline;
 }
 
+
 /* Grid main */
 
 .grid-main {
@@ -390,6 +403,15 @@ h1 {
 
 /* Grid Project */
 
+
+#choco-pack-mob {
+    display: block;
+}
+
+#choco-pack-desk {
+    display: none;
+}
+
 .grid-project {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -407,14 +429,6 @@ h1 {
 
 .solution {
     grid-column: 1 / span 4;
-}
-
-.solution-two {
-    font-size: 1rem;
-    font-weight: 400;
-    grid-column: 1 / span 4;
-    padding-top: 0rem;
-    margin-top: -1.25rem;
 }
 
 .subheading {
@@ -436,16 +450,6 @@ h1 {
     padding: 0.25rem;
   }
 
-#img-replaced {
-    display: none;
-}
-
-.image-replace {
-    display: block;
-    width: 100%;
-    height: auto;
-    padding: 0.25rem;
-}
 
 .column {
     display: block;
@@ -460,7 +464,7 @@ h1 {
 
    /* FOOTER */
 
-   .contact-footer {
+ .contact-footer {
     display: block;
     padding-top: 2rem;
     padding-left: 1rem;
@@ -506,7 +510,7 @@ h1 {
     margin-bottom: 3rem;
 
   }
- 
+
 
 
 }

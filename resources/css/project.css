@@ -430,8 +430,7 @@ h1 {
   }
 
    /* FOOTER */
-
- .contact-footer {
+   .contact-footer {
     display: block;
     padding-top: 2rem;
     padding-left: 1rem;
@@ -446,7 +445,8 @@ h1 {
   .contact-footer p {
     font-size: 1.25rem;
     font-weight: 400;
-    padding-top: 2rem;
+    padding-top: 0.5rem;
+    line-height: 140%;
 
   }
 
@@ -461,6 +461,8 @@ h1 {
   }
 
   .place {
+    margin-top: 1rem;
+    font-size: 1.25rem;
     grid-column: 1;
     margin-left: 1rem;
     margin-bottom: 0;
@@ -468,12 +470,12 @@ h1 {
   }
 
   .year {
+    font-size: 1.25rem;
     grid-column: 1;
     padding-left: 1rem;
     margin-bottom: 3rem;
 
   }
-
 
 
 }
