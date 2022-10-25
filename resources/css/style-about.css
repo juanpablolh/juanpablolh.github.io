@@ -1,0 +1,156 @@
+
+/* HEADER AND STRUCTURE ON CSS STYLE.CSS */
+
+/* Grid main */
+
+.grid-main {
+    display: inline-grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 8rem;
+    grid-gap: 1.25rem;
+}
+
+.grid-main h1 {
+    grid-column: 1 / span 8;
+    align-self: center;
+    padding-bottom: 3rem;
+    padding-top: 4rem;
+}
+
+.grid-main h2 {
+    grid-column: 1 / span 10;
+    align-self: center;
+}
+
+/* Grid info */
+
+
+.grid-main h1 {
+    padding-top: 4rem;
+    grid-column: 1 / span 10;
+    grid-row: 2;
+}
+
+.grid-main h2 {
+    padding-top: 1rem;
+    grid-column: 1 / span 10;
+    grid-row: 3;
+}
+
+.grid-main h3 {
+    padding-top: 2.5rem;
+    grid-column: 1 / span 10;
+    grid-row: 5;
+}
+
+.grid-main .my-work {
+    padding-top: 4rem;
+    grid-column: 1 / span 10;
+    grid-row: 5;
+}
+
+.grid-main .my-work p {
+    font-weight: 400;
+    font-size: 1.75rem;
+    padding-top: 2.5rem;
+}
+
+.grid-main .services {
+    padding-top: 4rem;
+    grid-column: 1 / span 3;
+    grid-row: 6;
+}
+
+.grid-main .services li {
+    padding-bottom: 0.5rem;
+}
+
+.grid-main .experience {
+    padding-top: 4rem;
+    grid-column: 4 / span 3;
+    grid-row: 6;
+}
+
+.grid-main .education {
+    padding-top: 4rem;
+    grid-column: 7 / span 3;
+    grid-row: 6;
+}
+
+.grid-main .contact {
+    padding-top: 4rem;
+    grid-column: 10 / span 2;
+    grid-row: 6;
+}
+
+.subheading {
+    font-weight: 500;
+    font-size: 1.75rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 1080px) {
+
+
+/* Grid main */
+
+.grid-main {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 8rem;
+}
+
+
+/* Grid info */
+
+.grid-main .my-work h3 {
+    padding-top: 2rem;
+    grid-column: 1 / span 10;
+    grid-row: 5;
+}
+
+.grid-main .my-work p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-top: 2.5rem;
+}
+
+.grid-main .services {
+    padding-top: 3rem;
+    grid-column: 1 / span 4;
+    grid-row: 6;
+}
+
+
+.grid-main .experience {
+    padding-top: 2rem;
+    grid-column: 1 / span 4;
+    grid-row: 7;
+}
+
+.grid-main .education {
+    padding-top: 2rem;
+    grid-column: 1 / span 4;
+    grid-row: 8;
+}
+
+
+.grid-main .contact {
+    display: none;
+}
+
+.subheading {
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+}
+
+}
