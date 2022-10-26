@@ -21,21 +21,16 @@
 .grid-main h1 {
     grid-column: 1 / span 8;
     align-self: center;
-    padding-bottom: 3rem;
-    padding-top: 4rem;
+    padding-bottom: 2rem;
+    padding-top: 6rem;
 }
 
-.grid-main h2 {
+.grid-main .fs-p-700 {
     padding-top: 1rem;
     grid-column: 1 / span 10;
     grid-row: 3;
 }
 
-.grid-main h3 {
-    padding-top: 2.5rem;
-    grid-column: 1 / span 10;
-    grid-row: 5;
-}
 
 .grid-main .my-work {
     padding-top: 4rem;
@@ -43,11 +38,6 @@
     grid-row: 5;
 }
 
-.grid-main .my-work p {
-    font-weight: 400;
-    font-size: 1.75rem;
-    padding-top: 2.5rem;
-}
 
 .grid-main .services {
     padding-top: 4rem;
@@ -56,7 +46,7 @@
 }
 
 .grid-main .services li {
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 .grid-main .experience {
@@ -65,10 +55,18 @@
     grid-row: 6;
 }
 
+.grid-main .experience li {
+    padding-bottom: 1rem;
+}
+
 .grid-main .education {
     padding-top: 4rem;
     grid-column: 7 / span 3;
     grid-row: 6;
+}
+
+.grid-main .education li {
+    padding-bottom: 1rem;
 }
 
 .grid-main .contact {
@@ -77,9 +75,7 @@
     grid-row: 6;
 }
 
-.subheading {
-    font-weight: 500;
-    font-size: 1.75rem;
+.grid-main h3 {
     padding-bottom: 2rem;
 }
 
@@ -100,17 +96,17 @@
 .grid-main h1 {
     grid-column: 1 / span 8;
     align-self: center;
-    padding-bottom: 3rem;
-    padding-top: 4rem;
+    padding-bottom: 1rem;
+    margin-top: 6rem;
 }
 
-.grid-main h2 {
+.grid-main .fs-p-700 {
     padding-top: 1rem;
     grid-column: 1 / span 7;
     grid-row: 3;
 }
 
-.grid-main .my-work h3 {
+.grid-main .fs-p-600 {
     padding-top: 2rem;
     grid-column: 1 / span 6;
     grid-row: 5;
@@ -129,9 +125,8 @@
     grid-column: 1 / span 3;
 }
 
-.subheading {
-    font-weight: 500;
-    font-size: 1.55rem;
+.grid-main h3 {
+    font-size: 1.5rem;
     padding-bottom: 2rem;
 }
 
