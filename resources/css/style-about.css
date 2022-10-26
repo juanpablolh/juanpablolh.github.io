@@ -1,6 +1,12 @@
 
 /* HEADER AND STRUCTURE ON CSS STYLE.CSS */
 
+/* HEADER */
+
+#about {
+    font-weight: 700;
+}
+
 /* Grid main */
 
 .grid-main {
@@ -17,20 +23,6 @@
     align-self: center;
     padding-bottom: 3rem;
     padding-top: 4rem;
-}
-
-.grid-main h2 {
-    grid-column: 1 / span 10;
-    align-self: center;
-}
-
-/* Grid info */
-
-
-.grid-main h1 {
-    padding-top: 4rem;
-    grid-column: 1 / span 10;
-    grid-row: 2;
 }
 
 .grid-main h2 {
@@ -92,11 +84,86 @@
 }
 
 
+@media only screen and (max-width: 960px) {
+
+/* Grid main */
+
+.grid-main {
+    display: inline-grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-top: 4rem;
+    grid-gap: 1.25rem;
+}
+
+.grid-main h1 {
+    grid-column: 1 / span 8;
+    align-self: center;
+    padding-bottom: 3rem;
+    padding-top: 4rem;
+}
+
+.grid-main h2 {
+    padding-top: 1rem;
+    grid-column: 1 / span 7;
+    grid-row: 3;
+}
+
+.grid-main .my-work h3 {
+    padding-top: 2rem;
+    grid-column: 1 / span 6;
+    grid-row: 5;
+}
+
+.grid-main .my-work {
+    padding-top: 1rem;
+    grid-column: 1 / span 6 ;
+    grid-row: 5;
+}
+
+.grid-main .my-work p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    grid-column: 1 / span 3;
+}
+
+.subheading {
+    font-weight: 500;
+    font-size: 1.55rem;
+    padding-bottom: 2rem;
+}
+
+
+.grid-main .services {
+    padding-top: 2rem;
+    grid-column: 1 / span 3;
+    grid-row: 6;
+}
+
+.grid-main .experience {
+    padding-top: 2rem;
+    grid-column: 4 / span 2;
+    grid-row: 6;
+}
+
+.grid-main .education {
+    padding-top: 2rem;
+    grid-column: 6 / span 3;
+    grid-row: 6;
+}
+
+.contact {
+    display: none;
+}
+
+}
 
 
 
-@media only screen and (max-width: 1080px) {
 
+@media only screen and (max-width: 600px) {
 
 /* Grid main */
 
@@ -105,15 +172,32 @@
     grid-template-columns: repeat(4, 1fr);
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 8rem;
+    margin-top: 4rem;
+    grid-gap: 1.25rem;
 }
 
+.grid-main h1 {
+    grid-column: 1 / span 4;
+    align-self: center;
+    padding-bottom: 3rem;
+    padding-top: 4rem;
+}
 
-/* Grid info */
+.grid-main h2 {
+    padding-top: 1rem;
+    grid-column: 1 / span 4;
+    grid-row: 3;
+}
 
-.grid-main .my-work h3 {
-    padding-top: 2rem;
-    grid-column: 1 / span 10;
+.grid-main h3 {
+    padding-top: 2.5rem;
+    grid-column: 1 / span 4;
+    grid-row: 5;
+}
+
+.grid-main .my-work {
+    padding-top: 4rem;
+    grid-column: 1 / span 4;
     grid-row: 5;
 }
 
@@ -121,6 +205,7 @@
     font-weight: 400;
     font-size: 1.5rem;
     padding-top: 2.5rem;
+    grid-column: 1 / span 4;
 }
 
 .grid-main .services {
