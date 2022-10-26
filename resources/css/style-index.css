@@ -90,12 +90,6 @@ h1 {
 
 @media only screen and (max-width: 960px) {
 
-  h1 {
-    grid-column: 1 / span 6;
-    grid-row: 3;
-    align-self: center;
-  }
-
   .grid-main {
     display: inline-grid;
     grid-template-columns: repeat(8, 1fr);
@@ -103,6 +97,12 @@ h1 {
     margin-right: 2rem;
     margin-top: 8rem;
     grid-gap: 1.25rem;
+  }
+
+  .grid-main h1 {
+    grid-column: 1 / span 6;
+    grid-row: 3;
+    align-self: center;
   }
 
 }
