@@ -2,8 +2,8 @@
   --clr-primary-900: hsl(0, 0%, 0%) ;
   --clr-bg-primary: #F7F6EF ;
 
-  --bg-body: var(--clr-primary-200);
-  --bg-header: var(--clr-primary-200);
+  --bg-body: var(--clr-bg-primary);
+  --bg-header: var(--clr-bg-primary);
   
   --ff-primary: 'Inter', sans-serif;
   --ff-body: var(--ff-primary) ;
@@ -27,6 +27,8 @@
   Box-sizing: border-box;
   Margin: 0;
   Padding: 0;
+
+  background-color: var(--bg-header);
 
   list-style: none;
   }
@@ -57,6 +59,22 @@
   padding-right: 1rem;
 }
 
+header {
+  padding-left: 1rem;
+  padding-right: 1rem; 
+  background-color: var(--bg-header);  
+}
+
+.main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+footer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 @media (min-width: 600px) {
 
   :root {
@@ -66,9 +84,19 @@
   .container-grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
+
+  header {
+    padding-left: 2rem;
+    padding-right: 2rem; 
+    background-color: var(--bg-header);  
+  }
+
+  .main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
 }
 
 
@@ -84,4 +112,17 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
   }
+
+  header,
+  footer {
+    padding-left: 2rem;
+    padding-right: 2rem; 
+    background-color: var(--bg-header);  
+  }
+
+  .main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
 }
