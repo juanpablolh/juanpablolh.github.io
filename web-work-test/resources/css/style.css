@@ -181,7 +181,7 @@ footer {
 
 
 
-@media (min-width: 850px) {
+@media (min-width: 768px) {
 
   :root {
     --fs-800: 2.5rem;

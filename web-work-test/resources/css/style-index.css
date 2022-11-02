@@ -109,7 +109,7 @@ button {
 
 
 
-@media (min-width: 850px) {
+@media (min-width: 768px) {
 
   .intro,
   .pr-container {
@@ -130,7 +130,7 @@ button {
     margin-bottom: 3rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    width: 48%;
+    width: 47%;
   }
 
   .img-content {

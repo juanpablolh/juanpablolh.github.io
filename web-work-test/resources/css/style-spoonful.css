@@ -125,7 +125,7 @@ h1 {
 
 /* TABLET */
 
-@media (min-width: 850px) {
+@media (min-width: 768px) {
   
   .intro,
   .pr-container {
