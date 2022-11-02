@@ -201,12 +201,12 @@ button {
 
 @media (min-width: 1080px) {
 
-  .intro {
-    padding-top: 2rem;
-    grid-column: 1 / span 9;  
-    padding-left: 0rem;
-    padding-right: 0rem;
-  }
+.intro {
+  padding-top: 2rem;
+  grid-column: 1 / span 9;  
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
 
 .pr-container {
   display: block;
@@ -239,10 +239,10 @@ button {
 
 .pr-description {
   font-family: var(--ff-primary);
-  font-size: var(--fs-900);
+  font-size: var(--fs-800);
   font-weight: var(--fw-bold);
   padding-top: 0.5rem;
-  line-height: 140%;
+  line-height: 136%;
 }
 
 
@@ -257,42 +257,3 @@ button {
 
 }
 
-
-
-/* .projects {
-  line-height:0;
-  column-count:2;
-  column-gap:0.5rem;
-
-  position: relative;
-  width: 100%;
-} */
-
-
-
-
-
-
-/* .cover {
-  position: relative;
-  width: 100%;
-} */
-
-
-
-/* .text {
-  font-weight: 400;
-  font-size: 1.25rem;
-  color: white;
-  position: absolute;
-  top: 3rem;
-  left: 7rem;
-  transform: translate(-50%, -50%);
-  text-align: center;
-} */
-
-
-
-/* .name-project {
-  display: none;
-}  */
