@@ -1,0 +1,298 @@
+
+/* MAIN CONTENT */
+
+.main {
+  background-color: var(--clr-bg-primary);
+  width: 100%;
+}
+
+.intro,
+.pr-container {
+    grid-column: 1 / span 4;
+}
+
+.intro {
+  margin-top: 14rem;
+}
+
+.p-intro {
+  font-size: var(--fs-800);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  line-height: 140%;
+  padding-top: 0.5rem;
+}
+
+.arrow {
+  margin-top: 1rem;
+  margin-bottom: 8rem;
+}
+
+.pr-content {
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.img-content {
+  width: 100%;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 4px solid #000;
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+  grid-column: 1 / span 4;
+  width: 100%;
+}
+
+.pr-tags-container {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.pr-tags {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-medium);
+  border-radius: 4px;
+  border-color: rgb(171, 171, 171);
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+}
+
+.strategy {
+  background-color: #eff7cf;
+}
+.visual {
+  background-color: #fdd5c6;
+}
+.voice {
+  background-color: #b9dafc;
+}
+.packaging {
+  background-color: #f7cfdb;
+}
+.uxui {
+  background-color: #bcbaff;
+}
+
+
+.pr-description {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-700);
+  padding-top: 0.5rem;
+  line-height: 140%;
+}
+
+button {
+  display: none;
+}
+
+
+.p-title {
+  line-height: 140%;
+}
+
+.pr-description {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-600);
+  padding-top: 0.5rem;
+  line-height: 140%;
+}
+
+.contact-hidden {
+  display: none;
+}
+
+
+
+@media (min-width: 850px) {
+
+  .intro,
+  .pr-container {
+      grid-column: 1 / span 8;
+  }
+
+  .pr-container {
+    display:flex;
+    flex-wrap: wrap;
+  }
+  
+  .intro {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .project {
+    margin-bottom: 3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    width: 48%;
+  }
+
+  .img-content {
+    width: 100%;
+  }
+
+  .pr-content {
+    width: 100%;
+    padding-left: 0rem;
+  }
+
+
+  .pr-description {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-700);
+    padding-top: 0.5rem;
+    line-height: 140%;
+  }
+
+  button {
+    display: block;
+    border: 0px;
+    margin-top: 2rem;
+  }  
+
+  button a {
+    text-decoration: none;
+  }  
+
+  .button {
+    padding: 1rem 1.25rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: var(--fs-400);
+    transition: all 300ms;
+  }
+
+  .button:hover,
+  .button:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+  .button:hover {
+    transform: translateY(-1px);
+  }
+
+  .button:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
+
+  .contact-hidden {
+    display: none;
+  }
+
+  .footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+
+}
+
+@media (min-width: 1080px) {
+
+  .intro {
+    padding-top: 2rem;
+    grid-column: 1 / span 9;  
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+.pr-container {
+  display: block;
+  grid-column: 1 / span 12; 
+}
+
+.img-content {
+  width: 100%;
+}
+
+.pr-content {
+  width: 100%;
+  padding-left: 0rem;
+  padding-right: 2rem;
+}
+
+
+.project {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row-reverse;
+  margin-bottom: 3rem;
+  width: 100%;
+  border-bottom: 4px solid rgb(255, 255, 255);
+}
+
+.p-title {
+  font-weight: var(--fw-medium);
+}
+
+.pr-description {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-900);
+  font-weight: var(--fw-bold);
+  padding-top: 0.5rem;
+  line-height: 140%;
+}
+
+
+.contact-hidden {
+  display: none;
+}
+
+.footer {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+}
+
+
+
+/* .projects {
+  line-height:0;
+  column-count:2;
+  column-gap:0.5rem;
+
+  position: relative;
+  width: 100%;
+} */
+
+
+
+
+
+
+/* .cover {
+  position: relative;
+  width: 100%;
+} */
+
+
+
+/* .text {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: white;
+  position: absolute;
+  top: 3rem;
+  left: 7rem;
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
+
+
+
+/* .name-project {
+  display: none;
+}  */
