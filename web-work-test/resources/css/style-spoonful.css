@@ -34,7 +34,7 @@ h1 {
   font-size: var(--fs-800);
   font-family: var(--ff-primary);
   font-weight: var(--fw-bold);
-  line-height: 140%;
+  line-height: 134%;
 }
 
 /* tags */
@@ -125,7 +125,7 @@ h1 {
 
 /* TABLET */
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   
   .intro,
   .pr-container {
