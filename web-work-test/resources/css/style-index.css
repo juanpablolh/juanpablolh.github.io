@@ -1,5 +1,9 @@
 
 /* MAIN CONTENT */
+/* 
+*{
+  border: 1px solid black;
+} */
 
 .main {
   background-color: var(--clr-bg-primary);
@@ -69,11 +73,9 @@
 .visual {
   background-color: #fdd5c6;
 }
-.voice {
-  background-color: #b9dafc;
-}
+
 .packaging {
-  background-color: #f7cfdb;
+  background-color: #b9dafc;
 }
 .uxui {
   background-color: #bcbaff;
@@ -127,10 +129,11 @@ button {
   }
 
   .project {
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     width: 47%;
+    border-bottom: none;
   }
 
   .img-content {
@@ -158,41 +161,8 @@ button {
   }
 
   button {
-    display: block;
-    border: 0px;
-    margin-top: 2rem;
+    display: none;
   }  
-
-  button a {
-    text-decoration: none;
-  }  
-
-  .button {
-    padding: 1rem 1.25rem;
-    border: 1px solid black;
-    border-radius: 4px;
-    font-size: var(--fs-400);
-    transition: all 300ms;
-  }
-
-  .button:hover,
-  .button:focus {
-    border-color: rgba(0, 0, 0, 0.15);
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(0, 0, 0, 1);
-  }
-
-  .button:hover {
-    transform: translateY(-1px);
-  }
-
-  .button:active {
-    background-color: #F0F0F1;
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-    color: rgba(0, 0, 0, 0.65);
-    transform: translateY(0);
-  }
 
   .contact-hidden {
     display: none;
@@ -206,7 +176,7 @@ button {
 
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 960px) {
 
 .intro {
   padding-top: 2rem;
@@ -222,6 +192,7 @@ button {
 
 .img-content {
   width: 100%;
+  height: auto;
 }
 
 .pr-content {
@@ -235,7 +206,7 @@ button {
   display: flex;
   flex-direction: row;
   flex-flow: row-reverse;
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
   width: 100%;
   border-bottom: 4px solid rgb(255, 255, 255);
 }
@@ -252,6 +223,42 @@ button {
   line-height: 136%;
 }
 
+button {
+  display: block;
+  border: 0px;
+  margin-top: 2rem;
+}  
+
+button a {
+  text-decoration: none;
+}  
+
+.button {
+  padding: 1rem 1.25rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: var(--fs-400);
+  transition: all 300ms;
+}
+
+.button:hover,
+.button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
 
 .contact-hidden {
   display: none;

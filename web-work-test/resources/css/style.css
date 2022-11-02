@@ -190,12 +190,12 @@ footer {
   .container-grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 1rem;
+    gap: 0rem;
   }
 
   header {
-    padding-left: 2rem;
-    padding-right: 2rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
     background-color: var(--bg-header);  
   }
 
@@ -211,7 +211,7 @@ footer {
 /* DESKTOP */
 
 
-@media (min-width: 1080px) {
+@media (min-width: 960px) {
 
   :root {
     --fs-800: 3rem;
