@@ -226,7 +226,7 @@ button a {
   display: flex;
   flex-direction: column;
   grid-column: 1 / span 12;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
   border-top: 1px solid black;;
 }
 
