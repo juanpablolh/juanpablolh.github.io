@@ -1,4 +1,9 @@
 
+/* 
+*{
+  border: 1px solid black;
+} */
+
 @font-face {
   font-family: 'Editorial-New';
   src: url('../fonts/EditorialNew-Regular.woff2') format('woff2');
@@ -8,10 +13,7 @@
 }
 
 /* MAIN CONTENT */
-/* 
-*{
-  border: 1px solid black;
-} */
+
 
 .main {
   background-color: var(--clr-bg-primary);
@@ -52,6 +54,8 @@ h1 {
 
 }
 
+/* PROJECTS */
+
 .project {
   display: flex;
   flex-direction: column;
@@ -61,25 +65,44 @@ h1 {
   width: 100%;
 }
 
-.image-box-first {
+.project img {
+  object-fit: cover;
   width: 100%;
-  height: 280px;
-  background-image: url(../projects/spoonful/spoonful-cover.png);
-  background-position: center;
-  background-size: cover;
+  max-height: 22rem;
   border-radius: 0.5rem;
 }
 
-.img-content {
-  width: 100%;
-  height: 200px;
-  border-radius: 0.5rem;
+.img-tags {
+  position: relative;
 }
 
-/* CAMBIAR HEIGHT AUTO CON LA IMAGEN */
+.services-list {
+  display: flex;
+  margin-right: 0.5rem; 
+  position: relative;
+}
+
+.services-list li {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-regular);
+  text-align: center;
+  color: #fff;
+
+  padding: 0.35rem 0.35rem;
+  margin-right: 0.5rem;
+
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+
+  position: relative;
+  bottom: 2.25rem;
+  left: 0.75rem;
+
+}
 
 .pr-content {
-  padding-top: 1rem;
   width: 100%;
 }
 
@@ -90,61 +113,7 @@ h1 {
   padding-left: 0.5rem;
 }
 
-
-.pr-tags-container {
-  display: flex;
-  margin-top: 0.5rem;
-}
-
-.pr-tags {
-  font-family: var(--ff-primary);
-  font-size: var(--fs-300);
-  font-weight: var(--fw-medium);
-  border-radius: 4px;
-  border-color: rgb(171, 171, 171);
-  margin-right: 0.5rem;
-  padding: 0.25rem 0.25rem;
-  text-align: center;
-}
-
-.first {
-  background-color: #EFF7CF;
-}
-.second {
-  background-color: #FDD5C6;
-}
-.third {
-  background-color: #B9DAFC;
-}
-.fourth {
-  background-color: #BCBAFF;
-}
-.fifth {
-  background-color: #CFF7F0;
-}
-
-
-/* .strategy {
-  background-color: #eff7cf;
-}
-.visual {
-  background-color: #fdd5c6;
-}
-
-.packaging {
-  background-color: #b9dafc;
-}
-.uxui {
-  background-color: #bcbaff;
-} */
-
-
-.pr-description {
-  font-family: var(--ff-primary);
-  font-size: var(--fs-700);
-  padding-top: 0.5rem;
-  line-height: 140%;
-}
+/* ABOUT SECTION */
 
 .section-about {
   display: flex;
@@ -174,7 +143,7 @@ h1 {
 }
 
 
-/* BUTTON */
+/* BUTTON STARTS */
 
 button {
   border: 0px;
@@ -204,7 +173,7 @@ button a {
   transform: translateY(-1px);
 }
 
-/* END BUTTON */
+/* BUTTON ENDS */
 
 
 /* DESKTOP MEDIA QUERY */
