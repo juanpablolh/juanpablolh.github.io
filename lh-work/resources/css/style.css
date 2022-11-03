@@ -1,6 +1,9 @@
 @font-face {
-  font-family: EditorialNew-Regular;
-  src: url(./resources/fonts/EditorialNew-Regular.woff2) format('woff2');
+  font-family: 'Editorial-New';
+  src: url('../fonts/EditorialNew-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
 }
 
 :root {
@@ -11,7 +14,7 @@
   --bg-header: var(--clr-bg-primary);
   
   --ff-primary: 'Inter', sans-serif;
-  --ff-secondary: 'EditorialNew-Regular', serif;
+  --ff-secondary: 'Editorial-New', serif;
   --ff-body: var(--ff-primary) ;
   --ff-heading: var(--ff-primary) ;
   
