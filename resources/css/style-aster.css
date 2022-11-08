@@ -96,6 +96,30 @@
   line-height: 140%;
 }
 
+.img-project .img-Wrapper-pr img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 30rem;
+  max-height: 52rem;
+  margin-top: 1rem;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.left-col, .right-col {
+  width: 100%;
+  height: auto;
+
+}
+
+.img-hidden {
+  display: none;
+}
+
 
 /* DESKTOP */
 
@@ -149,6 +173,13 @@
 }
 .solution {
   grid-column: 5 / span 4;
+}
+
+.img-hidden {
+  display: flex;
+}
+.img-visible {
+  display: none;
 }
 
 }

@@ -119,6 +119,10 @@
   margin-top: 1rem;
 }
 
+.pad-top {
+  padding-top: 1rem;
+}
+
 
 /* DESKTOP */
 
@@ -176,11 +180,17 @@
 
 .two-columns {
   flex-direction:row;
+  justify-content:space-between ;
 }
 
 .left-col, .right-col {
-  width: 50%;
+  width: 49.5vw;
 }
+
+.pad-top {
+  padding-top: 0rem;
+}
+
 
 }
 

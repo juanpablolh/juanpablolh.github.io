@@ -112,9 +112,15 @@
 .left-col, .right-col {
   width: 100%;
   height: auto;
-
 }
 
+.img-hidden {
+  display: none;
+}
+
+.pad-top {
+  padding-top: 1rem;
+}
 
 
 /* DESKTOP */
@@ -178,6 +184,21 @@
 
 .left-col, .right-col {
   width: 49.5vw;
+}
+
+.img-hidden {
+  display: flex;
+}
+.img-visible {
+  display: none;
+}
+
+.pad-top {
+  padding-top: 0rem;
+}
+
+.figma-prototype {
+  margin-top: 1rem;
 }
 
 }
