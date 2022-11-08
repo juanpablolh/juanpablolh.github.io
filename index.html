@@ -13,64 +13,127 @@
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="grid-header">
-        <p class="logo">López-Hernández</p>
-        <a class="info" href="./about.html">About</a>
-        <a class="linkedin-link" href="https://www.linkedin.com/in/juanpablolopezh/" target="_blank"><img class="linkedin" src="./resources/imgs/svg/in.svg" alt="Go to my LinkedIn profile"></a>
+<!-- NAVBAR -->
 
-    </header>
+<header>
+    <nav class="nav-flex">
+        <a class="logo" href="./index.html">López-Hernández</a>
+        <div class="header-left">
+            <a class="about" href="./about.html">About</a>
+            <a class="ico-linkedin" href="https://www.linkedin.com/in/juanpablolopezh/" target="_blank"><img class="linkedin" src="./resources/imgs/svg/in.svg" alt="Go to my LinkedIn profile"></a>    
+        </div>
+    </nav>
+</header>  
 
-    <!-- CONTENT -->
+    <!-- MAIN CONTENT -->
 
-    <main class="grid-main">
-        <h1>This is an h1 that welcomes you to see some stuff I've done.</h1>
-        <img class="arrow" src="./resources/imgs/svg/Arrow.svg" alt="arrow directioning to content">
-    </main>
+    <div class="container-grid main">
 
-    <section class="grid-projects">
+        <main class="intro">
+            <h1>My Work</h1>
+            <p class="p-intro">This title welcomes you to see a selection of design projects which I have helped to create.</p>
+            <img class="arrow" src="./resources/imgs/svg/Arrow.svg" alt="arrow directioning to content">        
+        </main>
 
-        <div class="img-box">
-            <img src="./resources/projects/spoonful/spoonful-cover.png" alt="">
-            <a href="./spoonful.html"><div class="overlay"> <div class="text">Spoonful</div> </div></a>
-            <div class="p-mobile"><p class="title">Spoonful</p><p class="description">Empowering uniqueness through an accessible well balance meal.</p></div>
+        <section class="pr-container">
+
+            <!-- PROJECT START -->
+
+            <div class="project">
+                    <div class="img-tags">
+                        <a href="./spoonful.html"><img src="./resources/projects/spoonful/spoonful-cover.png" alt="Spoonful logo over a photo of creamy peanutbutter"></a>
+                        <ul class="services-list">
+                            <li class="pr-tags">Brand Strategy</li>
+                            <li class="pr-tags">Brand Design</li>
+                            <li class="pr-tags">Packaging</li>
+                        </ul>
+                    </div>
+                    <div class="pr-content">
+                        <h2 class="p-title">Spoonful</h2>
+                    </div>
+            </div>
+
+            <!-- PROJECT ENDS -->
+
+            <!-- PROJECT START -->
+
+            <div class="project">
+                    <div class="img-tags">
+                        <a href="./aster.html"><img src="./resources/projects/aster/aster-cover.png" alt="Spoonful logo over a photo of creamy peanutbutter"></a>
+                        <ul class="services-list">
+                            <li class="pr-tags">Brand Strategy</li>
+                            <li class="pr-tags">Brand Design</li>
+                        </ul>
+                    </div>
+                    <div class="pr-content">
+                        <h2 class="p-title">Aster</h2>
+                    </div>
+            </div>
+
+            <!-- PROJECT ENDS -->
+
+         <!-- PROJECT STARTS -->
+
+            <div class="project">
+                <div class="img-tags">
+                    <a href="./larcomar.html"><img src="./resources/projects/larcomar/logo-larcomar.png" alt="Spoonful logo over a photo of creamy peanutbutter"></a>
+                    <ul class="services-list">
+                        <li class="pr-tags">Brand Design</li>
+                    </ul>
+                </div>
+                <div class="pr-content">
+                    <h2 class="p-title">Larcomar</h2>
+                </div>
         </div>
 
-        <div class="img-box">
-            <img src="./resources/projects/larcomar/Stationery-larco-square.jpg" alt="">
-            <a href="./larcomar.html"><div class="overlay"> <div class="text">Larcomar</div></div></a>
-            <div class="p-mobile"><p class="title">Larcomar</p><p class="description">Revitalizing an icon of Lima’s fashion and gastronomy scene.</p></div>
+        <!-- PROJECT ENDS -->
+
+        <!-- PROJECT START -->
+
+        <div class="project">
+                <div class="img-tags">
+                    <a href="./pcfactory.html"><img src="./resources/projects/pcfactory/imgs/factory-cover.jpg" alt="Spoonful logo over a photo of creamy peanutbutter"></a>
+                    <ul class="services-list">
+                        <li class="pr-tags">Brand Strategy</li>
+                        <li class="pr-tags">Brand Design</li>
+                        <li class="pr-tags">Web Design</li>
+                    </ul>
+                </div>
+                <div class="pr-content">
+                    <h2 class="p-title">pcFactory</h2>
+                </div>
         </div>
 
-        <div class="img-box">
-            <img src="./resources/projects/pcfactory/imgs/factory-cover.jpg" alt="">
-            <a href="./pcfactory.html"><div class="overlay"> <div class="text">pcFactory</div> </div></a>
-            <div class="p-mobile"><p class="title">pcFactory</p><p class="description">Bringing the main tech retail in Chile to the digital era.</p></div>
-        </div>
+        <!-- PROJECT ENDS -->   
 
-        <div class="img-box">
-            <img src="./resources/projects/aster/aster-cover.png" alt="">
-            <a href="./larcomar.html"><div class="overlay"> <div class="text">Aster</div> </div></a>
-            <div class="p-mobile"><p class="title">Aster</p><p class="description">Building a transformative development network for Antofagasta.</p></div>
-        </div>
+        </section>
 
-        
+        <section class="section-about">
+            <p class="p-about-title">Thank you for watching!</p>
+            <h3 class="p-about">If you want to know a bit more about my experiece and interests click or tap the button below.</h3>
+            <button>
+                <a href="./about.html" class="button" type="button">More About me</a>
+            </button>
+        </section>
+    </div>
 
-    </section>
+        <!-- FOOTER -->
 
-    <!-- FOOTER -->
-
-    <footer class="footer">
-        <div class="contact-footer">
-            <p class="subheading">Contact</p>
-            <p><a href="https://www.linkedin.com/in/juanpablolopezh/">LinkedIn</a> <br>
-                <a href="mailto:juanpablolh@gmail.com">Email me</a> <br>
-                <a href="instagram.com/juanpablolh/">instagram</a>
-        </div>
-        <p class="place">Santiago, Chile</p>
-        <p class="year">2022</p>
-    </footer>
+        <footer class="footer">
+            <div>
+                <p class="p-footer p-contact"><strong>Contact</strong></p>
+                <ul>
+                    <li class="p-footer"><a href="https://www.linkedin.com/in/juanpablolopezh/">LinkedIn</a></li>
+                    <li class="p-footer"><a href="mailto:juanpablolh@gmail.com">Email me</a></li>
+                    <li class="p-footer"><a href="instagram.com/juanpablolh/">instagram</a></li>
+                </ul>
+            </div>
+            <p class="p-location">Santiago de Chile</p> 
+        </footer>
 
 </body>
 </html>
+
+
+
 

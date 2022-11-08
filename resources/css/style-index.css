@@ -1,170 +1,237 @@
 
-/* GRID MAIN */
+/* 
+*{
+  border: 1px solid black;
+} */
 
-.grid-main {
-  display: inline-grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  margin-left: 2rem;
-  margin-right: 2rem;
-  height: 700px;
+@font-face {
+  font-family: 'Editorial-New';
+  src: url('../fonts/EditorialNew-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+/* MAIN CONTENT */
+
+
+.main {
+  background-color: var(--clr-bg-primary);
+  width: 100%;
+}
+
+.intro,
+.pr-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.intro,
+.pr-container {
+    grid-column: 1 / span 4;
+}
+
+.intro {
+  margin-top: 17rem;
 }
 
 h1 {
-  grid-column: 1 / span 8;
-  grid-row: 3;
-  align-self: center;
+  font-size: var(--fs-600);
+  font-family: var(--ff-primary);
+  margin-bottom: 1rem;
+}
+
+.p-intro {
+  font-size: var(--fs-800);
+  font-family: var(--ff-secondary);
+  line-height: 140%;
+  padding-top: 0.5rem;
 }
 
 .arrow {
-  grid-row: 5 / span 6;
+  margin-top: 2.5rem;
+  margin-bottom: 8rem;
+
 }
-  
 
 /* PROJECTS */
 
-.grid-projects {
-  line-height:0;
-  column-count:2;
-  column-gap:0.5rem;
-
-  position: relative;
-  width: 100%;
-}
-
-.grid-projects img {
-  width: 100% !important;
-  height: auto !important;
-  margin-bottom: 0.5rem;
-}
-
-
-/* OVERLAY */
-
-.img-box {
-  position: relative;
-  width: 100%;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  height: 99%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 1.25rem;
-  text-align: center;
-  margin-bottom: 0.5rem; 
-}
-
-.img-box:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  font-weight: 400;
-  font-size: 1.25rem;
-  color: white;
-  position: absolute;
-  top: 3rem;
-  left: 7rem;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.name-project {
-  display: none;
-}
-
-/* TABLET */
-
-@media only screen and (max-width: 960px) {
-
-  .grid-main {
-    display: inline-grid;
-    grid-template-columns: repeat(8, 1fr);
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 8rem;
-    grid-gap: 1.25rem;
-  }
-
-  .grid-main h1 {
-    grid-column: 1 / span 6;
-    grid-row: 3;
-    align-self: center;
-  }
-
-}
-
-/* MOBILE */
-
-@media only screen and (max-width: 600px) {
-
-
-/* CONTENT */
-    
-h1 {
-  font-size: 2rem;
+.project {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
   grid-column: 1 / span 4;
+  width: 100%;
+}
+
+.project img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 22rem;
+  min-height: 22rem;
+  border-radius: 0.5rem;
+}
+
+.img-tags {
+  position: relative;
+}
+
+.services-list {
+  display: flex;
+  margin-right: 0.5rem; 
+  position: relative;
+}
+
+.services-list li {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-regular);
+  text-align: center;
+  color: #fff;
+
+  padding: 0.35rem 0.35rem;
+  margin-right: 0.5rem;
+
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+
+  position: relative;
+  bottom: 2.25rem;
+  left: 0.75rem;
+
+}
+
+.pr-content {
+  width: 100%;
+}
+
+.p-title {
+  font-size: var(--fs-800);
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-regular);
+  padding-left: 0.5rem;
+}
+
+/* ABOUT SECTION */
+
+.section-about {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / span 4;
+  padding: 4rem 0;
+  border-top: 1px solid black;;
+
+}
+
+.p-about-title {
+  font-size: var(--fs-800);
+  font-family: var(--ff-secondary);
+  text-align: center;
+}
+
+
+.p-about {
+  font-size: var(--fs-600);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  line-height: 140%;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+/* BUTTON STARTS */
+
+button {
+  height: 3.5rem;
+  border: 0px;
+  margin-top: 3rem;
+}  
+
+button a {
+  text-decoration: none;
+}  
+
+.button {
+  padding: 1rem 1.25rem;
+  border: 1px solid black;
+  border-radius: 2rem;
+  font-size: var(--fs-400);
+  transition: all 300ms;
+}
+
+.button:hover,
+.button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+/* BUTTON ENDS */
+
+
+/* DESKTOP MEDIA QUERY */
+
+@media (min-width: 1024px) {
+
+.intro {
+  grid-column: 1 / span 6;
+  margin-top: 14rem;
+}
+
+.pr-container {
+  grid-column: 7 / span 6;
+  margin-top: 14rem;
+}
+
+.image-box-first {
+  width: 100%;
+  height: 350px;
+  background-image: url(../projects/spoonful/spoonful-cover.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+.section-about {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / span 12;
+  padding: 4rem 1rem;
+  border-top: 1px solid black;;
+}
+
+.p-about-title {
+  font-size: var(--fs-800);
+  font-family: var(--ff-secondary);
+  text-align: center;
+}
+
+
+.p-about {
+  font-size: var(--fs-700);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  line-height: 140%;
+  text-align: center;
+  padding-top: 0.5rem;
+  width: 45%;
   align-self: center;
 }
-  
-.grid-main {
-  display: inline-grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  margin-left: 1rem;
-  margin-right: 1rem;
-  height: 700px;
-}
-  
-/* PROJECTS */
 
-.text {
-  display: none;
+.intro,
+.pr-container {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
-  
-  
-.img-box:hover .overlay {
-  opacity: 0;
+
+
 }
-  
-.grid-projects {
-  column-count: 1;
-  column-count: 1;
-  column-count: 1;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-  
-.p-mobile {
-  display: block;
-}
-  
-.title {
-  font-weight: 600;
-  font-size: 1.2rem;
-  padding-top: 0.5rem;
-  padding-left: 0.5rem;
-}
-  
-.description {
-  font-weight: 400;
-  font-size: 1.1rem;
-  padding-bottom: 2rem;
-  padding-left: 0.5rem;
-}
-  
-}
-  

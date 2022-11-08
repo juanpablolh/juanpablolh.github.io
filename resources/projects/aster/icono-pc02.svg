@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103" height="106.743" viewBox="0 0 103 106.743">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.691" y1="2.174" x2="-0.004" y2="-1.087" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0299fe"/>
+      <stop offset="1" stop-color="#bdc5e3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.806" y1="0.229" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c966d3"/>
+      <stop offset="0.498" stop-color="#c0a9de"/>
+      <stop offset="1" stop-color="#bdc5e3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.805" y1="0.172" x2="0" y2="0.9" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#28e0a3"/>
+      <stop offset="1" stop-color="#bdc5e3"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_398" data-name="Group 398" transform="translate(-780 -3664.129)">
+    <rect id="Rectangle_480" data-name="Rectangle 480" width="80.25" height="62" transform="translate(780 3685.129)" opacity="0.41" fill="url(#linear-gradient)"/>
+    <path id="Rectangle_481" data-name="Rectangle 481" d="M26,0h1A26,26,0,0,1,53,26V42a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V26A26,26,0,0,1,26,0Z" transform="translate(795.5 3705.129)" opacity="0.92" fill="url(#linear-gradient-2)"/>
+    <circle id="Ellipse_151" data-name="Ellipse 151" cx="18" cy="18" r="18" transform="translate(803.5 3664.129)" fill="url(#linear-gradient-3)"/>
+    <circle id="Ellipse_152" data-name="Ellipse 152" cx="26.5" cy="26.5" r="26.5" transform="translate(830 3717.871)" opacity="0.84" fill="url(#linear-gradient-3)"/>
+    <g id="Group_368" data-name="Group 368" transform="translate(504.376 2088.33)" opacity="0.6">
+      <g id="Group_366" data-name="Group 366" transform="matrix(0.643, 0.766, -0.766, 0.643, 853.671, -277.176)">
+        <path id="Union_18" data-name="Union 18" d="M-184.3,3731.755v-5h11v-25.5h5v30.5Z" transform="translate(1332.299 -2091.781)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
