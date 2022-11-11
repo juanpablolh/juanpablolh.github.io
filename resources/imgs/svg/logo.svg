@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452.17 51">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-family: GTAlpinaFineTrial-ExtRgIt, 'GT Alpina Fine Trial';
+        font-style: italic;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: GTAlpinaFineTrial-ExtMd, 'GT Alpina Fine Trial';
+        font-weight: 500;
+      }
+
+      .cls-5 {
+        font-size: 48.3px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-5" transform="translate(0 40.57)"><tspan class="cls-4" x="0" y="0">L</tspan><tspan class="cls-3" x="37.14" y="0">o</tspan><tspan class="cls-4" x="68.92" y="0">pez </tspan><tspan class="cls-2" x="170.06" y="0">H</tspan><tspan class="cls-1" x="212.8" y="0">ernandez</tspan></text>
+  </g>
+</svg>
