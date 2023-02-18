@@ -14,7 +14,7 @@
   --bg-header: var(--clr-bg-primary);
   
   --ff-primary: 'Inter', sans-serif;
-  --ff-secondary: 'Apercu-Medium', serif;
+  --ff-secondary: 'Apercu-Medium', sans-serif;
   --ff-body: var(--ff-primary) ;
   --ff-heading: var(--ff-primary) ;
   
