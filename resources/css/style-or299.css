@@ -22,6 +22,22 @@
   margin-top: 2rem;
 }
 
+.tag-dueño {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-regular);
+  text-align: center;
+  align-self: center;
+  color: #000;
+
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  background-color: rgb(204, 236, 215);
+  /* border: 1px solid black; */
+  border-radius: 24px;
+  width:fit-content;
+}
+
 .hero-img {
   width: 100%;
 }
@@ -67,7 +83,7 @@ border-radius: 2rem;
 }
 
 .intro h2 {
-  font-size: var(--fs-600);
+  font-size: var(--fs-400);
   font-family: var(--ff-primary);
   font-weight: var(--fw-medium);
 }
@@ -76,7 +92,7 @@ border-radius: 2rem;
   font-size: var(--fs-800);
   font-family: var(--ff-secondary);
   font-weight: var(--fw-medium);
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   letter-spacing: -2%;
 }
 
@@ -232,9 +248,10 @@ border-radius: 2rem;
 }
 
 .intro h2 {
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
   font-family: var(--ff-primary);
   font-weight: var(--fw-medium);
+  margin-top: 1rem;
 }
 
 .info-grid {
@@ -244,7 +261,8 @@ border-radius: 2rem;
 }
 
 .challenge {
-  grid-column: 1 / span 5
+  grid-column: 1 / span 5;
+  margin-top: 0rem;
 }
 
 .more-info {
