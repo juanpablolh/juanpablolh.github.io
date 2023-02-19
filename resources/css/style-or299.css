@@ -22,6 +22,10 @@
   margin-top: 2rem;
 }
 
+.hero-img {
+  width: 100%;
+}
+
 .name {
   font-family: var(--ff-primary);
   font-weight: var(--fw-regular);
