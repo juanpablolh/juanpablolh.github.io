@@ -200,6 +200,7 @@ border-radius: 2rem;
 .left-col, .right-col {
   width: 100%;
   height: auto;
+  object-fit: cover;
 
 }
 
