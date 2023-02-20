@@ -1,4 +1,7 @@
-
+/* 
+* {
+  border: 1px solid #000;
+} */
 .video .videoWrapper video {
   object-fit: cover;
   width: 100%;
@@ -16,6 +19,15 @@
     grid-column: 1 / span 4;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.caption{
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-regular);
+  margin-top: 0.3rem;
+  text-align: right;
+  padding-right: 1rem;
 }
 
 .intro {
@@ -52,7 +64,7 @@
 .contact {
   font-family: var(--ff-secondary);
   font-weight: var(--fw-regular);
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
   background-color: #000;
 }
@@ -195,13 +207,21 @@ border-radius: 2rem;
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
+  width: 99%;
 }
 
 .left-col, .right-col {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
 
+.img-right {
+  padding-left: 0.5rem;
+}
+
+.img-left {
+  padding-right: 0.5rem;
 }
 
 #img-fitted {
