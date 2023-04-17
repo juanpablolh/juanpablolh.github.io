@@ -63,14 +63,16 @@
 
 .h-credit {
   font-family: var(--ff-primary);
-  font-size: var(--fs-400);
+  font-size: 0.85rem;
   font-weight: var(--fw-bold) ;
 }
 
 .p-credit {
   font-family: var(--ff-primary);
-  font-size: var(--fs-400);
+  font-size: 0.85rem;
   font-weight: var(--fw-regular) ;
+  line-height: 140%;
+  margin-top: 0.5rem;
 }
 
 .website {
