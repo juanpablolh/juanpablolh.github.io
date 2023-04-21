@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./resources/css/style-post.css">
+    <title>Test bootstrap</title>
+</head>
+
+<body>
+   
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="post">
+                    <div class="post-header">
+                      <div class="post-user-info">
+                        <h2 class="post-username">Juan Pablo</h2>
+                        <!-- <p class="post-timestamp">just now</p> -->
+                      </div>
+                    </div>
+                    <!-- <div class="post-content">
+                      <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet facilisis magna. Sed vel semper ligula.</p>
+                      <button class="post-button">Post</button>
+                    </div> -->
+
+                    <div class="post-input">
+                        <textarea class="post-textarea" placeholder="Write your post here..."></textarea>
+                    </div>
+                    <div>
+                        <button class="post-button" disabled>Post</button>
+                    </div>
+                      
+                    <div class="posts-container">
+                        <!-- Existing posts will be displayed here -->
+                    </div>
+
+                    <!-- js para postear -->
+                    <script>
+const postTextArea = document.querySelector('.post-textarea');
+const postButton = document.querySelector('.post-button');
+const postsContainer = document.querySelector('.posts-container');
+const likedPosts = new Set();
+
+postTextArea.addEventListener('input', () => {
+  const postText = postTextArea.value.trim();
+  if (postText.length > 0 && postText.length <= 140) {
+    postButton.disabled = false;
+  } else {
+    postButton.disabled = true;
+  }
+});
+
+postButton.addEventListener('click', () => {
+  const postText = postTextArea.value.trim();
+  if (postText !== '') {
+    const postTimestamp = new Date().toISOString();
+    const postId = Math.floor(Math.random() * 100000); // generate a random ID for the post
+    const newPost = `
+      <div class="post" data-post-id="${postId}">
+        <div class="post-header">
+          <div class="post-user-info">
+            <h2 class="post-username">Juan Pablo</h2>
+            <p class="post-timestamp" data-timestamp="${postTimestamp}">just now</p>
+          </div>
+        </div>
+        <div class="post-content">
+          <p class="post-text">${postText}</p>
+          <button class="post-like-button" data-post-id="${postId}">Like</button>
+          <span class="post-like-count">0</span>
+        </div>
+        <hr class="line-division">
+      </div>
+    `;
+    postsContainer.insertAdjacentHTML('afterbegin', newPost);
+    postTextArea.value = '';
+    postButton.disabled = true;
+  }
+});
+
+postsContainer.addEventListener('click', (event) => {
+  if (event.target.matches('.post-like-button')) {
+    const postId = event.target.dataset.postId;
+    if (!likedPosts.has(postId)) {
+      const likeCountElement = event.target.nextElementSibling;
+      let likeCount = parseInt(likeCountElement.textContent);
+      likeCount++;
+      likeCountElement.textContent = likeCount;
+      likedPosts.add(postId);
+    }
+  }
+});
+
+
+                    </script>
+                      
+
+                    <!-- JS para activar el botón de postear -->
+                    <script>
+                        const postTextArea = document.querySelector('.post-textarea');
+                        const postButton = document.querySelector('.post-button');
+
+                        postTextArea.addEventListener('input', () => {
+                        if (postTextArea.value.trim() !== '') {
+                            postButton.disabled = false;
+                        } else {
+                            postButton.disabled = true;
+                        }
+                        });
+                    </script>
+
+                  </div>
+            </div>
+          </div>
+
+          <!-- JS para el timestamp -->
+          <script>
+            const postTimestamps = document.querySelectorAll('.post-timestamp');
+            postTimestamps.forEach(timestamp => {
+            timestamp.textContent = getTimeSincePost(timestamp.dataset.timestamp);
+            });
+
+            function getTimeSincePost(postTimestamp) {
+            const now = new Date();
+            const postTime = new Date(postTimestamp);
+            const timeDiff = Math.abs(now - postTime);
+            const minutes = Math.floor(timeDiff / 60000);
+            
+            if (minutes < 1) {
+                return 'just now';
+            } else if (minutes === 1) {
+                return '1 minute ago';
+            } else if (minutes < 60) {
+                return `${minutes} minutes ago`;
+            } else if (minutes < 120) {
+                return '1 hour ago';
+            } else if (minutes < 1440) {
+                return `${Math.floor(minutes/60)} hours ago`;
+            } else if (minutes < 2880) {
+                return '1 day ago';
+            } else {
+                return `${Math.floor(minutes/1440)} days ago`;
+            }
+            }
+          </script>
+
+
+    </div>
+
+</body >
+
+</html>
