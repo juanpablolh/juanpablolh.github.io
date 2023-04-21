@@ -75,9 +75,14 @@ postButton.addEventListener('click', () => {
         <hr class="line-division">
       </div>
     `;
-    postsContainer.insertAdjacentHTML('afterbegin', newPost);
-    postTextArea.value = '';
-    postButton.disabled = true;
+    const postText = postTextArea.value.trim();
+const postTimestamp = new Date().toISOString();
+if (postText !== '') {
+  postsContainer.insertAdjacentHTML('afterbegin', newPost);
+  postTextArea.value = '';
+  postButton.disabled = true;
+  addPostToDatabase(postText, postTimestamp);
+}
   }
 });
 
