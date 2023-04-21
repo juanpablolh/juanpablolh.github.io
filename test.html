@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./test.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+    
+    <h1>News Summarizer</h1>
+    <label for="news-link">Enter news page link:</label>
+    <input type="text" id="news-link"><br><br>
+    <button onclick="summarize()">Summarize</button><br><br>
+    <div id="summarized-text"></div>
+    <script>
+      function summarize() {
+        const link = document.getElementById("news-link").value;
+        const api_key = "0bb812fb49c191111296f7c9db1dbda4c4ce80ee9872241bc85512de";
+        const api_endpoint = "https://api.textrazor.com/v2/summarize";
+        const headers = {
+          "X-TextRazor-Key": api_key,
+          "Content-Type": "application/json"
+        };
+        const params = new URLSearchParams({
+          "extractors": "entities",
+          "entities.filterDbpediaTypes": "http://dbpedia.org/ontology/NewsArticle"
+        }).toString();
+        const data = {
+          "url": link,
+          "language": "eng"
+        };
+        fetch(api_endpoint + '?' + params, {
+          method: "POST",
+          headers: headers,
+          body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(json => {
+          const summarized_text = json.response.summary.sentences.join(" ");
+          document.getElementById("summarized-text").innerHTML = summarized_text;
+        })
+        .catch(error => {
+          console.error(error);
+        });
+      }
+    </script>
+      
+</body>
+
+</html>
